@@ -125,7 +125,7 @@ ul {
   transition: fill 250ms var(--bezier-time),
     background-color 250ms var(--bezier-time);
 }
-.modal-btn:is(:hover, :focus){
+.modal-btn:is(:hover, :focus) {
   fill: var(--dominant-color);
   background-color: var(--pressed-state-ocean-color);
 }
@@ -136,9 +136,14 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.modal-wrap {
+  margin-bottom: 8px;
+}
+.modal-wrap:nth-child(4) {
+  margin-bottom: 16px;
+}
 .label-flow {
   position: relative;
-  margin-bottom: 8px;
 }
 .label-text {
   display: inline-block;
@@ -166,7 +171,7 @@ ul {
 .label-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms var(--bezier-time);
 }
@@ -174,7 +179,6 @@ ul {
   fill: var(--primary-brand-iris-color);
 }
 .modal-textarea {
-  margin-bottom: 16px;
   width: 100%;
   height: 120px;
   padding: 8px 16px;
@@ -208,13 +212,12 @@ ul {
   border-radius: 2px;
   fill: transparent;
   transition: background-color 250ms var(--bezier-time),
-    border 250ms var(--bezier-time),
-    fill 250ms var(--bezier-time);
+    border 250ms var(--bezier-time), fill 250ms var(--bezier-time);
 }
 .policy-text {
   color: #757575;
 }
-.input-check:focus + .privacy-policy span{
+.input-check:focus + .privacy-policy span {
   outline: 1.25px solid var(--pressed-state-ocean-color);
 }
 .input-check:checked + .privacy-policy span {
@@ -223,6 +226,7 @@ ul {
   fill: var(--dominant-color);
 }
 .privacy-policy-link {
+  color: var(--primary-brand-iris-color);
   margin-left: 3px;
 }
 .send-btn {
@@ -605,13 +609,14 @@ ul {
   letter-spacing: 0.04em;
   color: var(--dominant-color);
   background-color: var(--primary-brand-iris-color);
-  border: 0;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms var(--bezier-time);
 }
 .footer-send-icon {
- fill: var(--dominant-color);
+  display: block;
+  fill: var(--dominant-color);
 }
 .subscribe-btn:is(:hover, :focus) {
   background-color: var(--pressed-state-ocean-color);
