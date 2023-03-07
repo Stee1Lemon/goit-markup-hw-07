@@ -1,0 +1,391 @@
+/* ------------------Global settings------------------ */
+:root {
+  --dominant-color: #ffffff;
+  --primary-brand-iris-color: #4d5ae5;
+  --pressed-state-ocean-color: #404bbf;
+  --dark-navy-blue-color: #2e2f42;
+  --success-green-color: #31d0aa;
+  --text-slate-color: #434455;
+  --subtle-text-light-slate-color: #8e8f99;
+  --accent-cornflower-color: #e7e9fc;
+  --light-cloud-color: #f4f4fd;
+  --modal-overlay-navy-blue-modal-color: #2e2f4266;
+  --hero-background-grey-color: #2e2f42;
+  --bezier-time: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-slate-color);
+  background-color: var(--dominant-color);
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------Section Global---------------- */
+
+.section-title {
+  color: var(--dark-navy-blue-color);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+/* ----------------Header---------------- */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--accent-cornflower-color);
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--dark-navy-blue-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-color {
+  color: var(--primary-brand-iris-color);
+}
+.header-navigation {
+  display: none;
+}
+.address {
+  display: none;
+}
+.menu-btn {
+  background-color: black;
+  border: none;
+}
+/* ----------------Hero---------------- */
+.hero {
+  padding: 112px 0;
+  max-width: 428px;
+  margin: 0 auto;
+  background-color: orange;
+}
+.hero-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dominant-color);
+  text-transform: capitalize;
+  max-width: 320px;
+}
+.hero-btn {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--dominant-color);
+  background-color: var(--primary-brand-iris-color);
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border-color: var(--primary-brand-iris-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--bezier-time),
+    border-color 250ms var(--bezier-time);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state-ocean-color);
+  border-color: var(--pressed-state-ocean-color);
+}
+
+/* ----------------Features---------------- */
+
+.features {
+  padding: 96px 0;
+}
+.features-wrap {
+  text-align: center;
+}
+.feature-item-wrap:not(:last-child) {
+  margin-bottom: 72px;
+}
+.feature-thumb {
+  display: none;
+}
+.subtitle {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--dark-navy-blue-color);
+}
+.text {
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ----------------We doing---------------- */
+
+.we-doing {
+  display: none;
+}
+
+/* ----------------Our Team---------------- */
+
+.team {
+  padding: 96px 0;
+  background-color: var(--light-cloud-color);
+}
+.section-card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 264px;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-card:not(:last-child) {
+  margin-bottom: 72px;
+}
+.section-card-info {
+  padding: 32px 16px;
+  text-align: center;
+}
+.section-card-info > .subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section-card-info > .text {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.card-social {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card-social-item {
+  width: 40px;
+  height: 40px;
+}
+.card-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand-iris-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms var(--bezier-time);
+}
+.card-social-icon {
+  fill: var(--light-cloud-color);
+}
+.card-social-link:hover,
+.card-social-link:focus {
+  background-color: var(--pressed-state-ocean-color);
+}
+
+/* ------------------Customers------------------ */
+
+.customers {
+  padding: 96px 0;
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text-light-slate-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--subtle-text-light-slate-color);
+  transition: color 250ms var(--bezier-time),
+    border-color 250ms var(--bezier-time);
+}
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:is(:hover, :focus) {
+  color: var(--pressed-state-ocean-color);
+  border-color: var(--pressed-state-ocean-color);
+}
+
+/* ------------------Footer------------------ */
+
+.footer {
+  background-color: var(--dark-navy-blue-color);
+  padding: 96px 0;
+}
+.footer-logo-container {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.footer-logo {
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-cloud-color);
+}
+.footer-social-container {
+  margin-bottom: 72px;
+}
+.footer-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 268px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-cornflower-color);
+}
+.footer-social-text {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dominant-color);
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms var(--bezier-time);
+}
+.footer-social-icon {
+  fill: var(--light-cloud-color);
+}
+.footer-social-link:is(:hover, :focus) {
+  background-color: var(--success-green-color);
+}
+.subscribe-text {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dominant-color);
+}
+.subscribe-wrap {
+}
+.subscribe-mail {
+    margin-bottom: 16px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--dominant-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.subscribe-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--dominant-color);
+  background-color: var(--primary-brand-iris-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms var(--bezier-time);
+}
+.footer-send-icon {
+  display: block;
+  fill: var(--dominant-color);
+}
+.subscribe-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-ocean-color);
+}

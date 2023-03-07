@@ -277,7 +277,7 @@ ul {
 .navigation-wrap {
   display: flex;
 }
-.header-navigation-wrap {
+.header-navigation {
   display: flex;
   gap: 40px;
 }
@@ -297,7 +297,7 @@ ul {
 .address {
   margin-left: auto;
 }
-.header-address-wrap {
+.header-address {
   display: flex;
   gap: 40px;
 }
