@@ -57,7 +57,7 @@
   .header-auth:focus {
     color: var(--primary-brand-iris-color);
   }
-  .menu-btn {
+  .menu-btn-open {
     display: none;
   }
   .hero {
@@ -126,5 +126,8 @@
   }
   .subscribe-mail {
     width: 264px;
+  }
+  .modal {
+    width: 408px;
   }
 }
