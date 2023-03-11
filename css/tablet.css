@@ -34,7 +34,7 @@
   }
   .current::after {
     position: absolute;
-    bottom: -24px;
+    bottom: -25px;
     content: "";
     display: block;
     width: 100%;
@@ -47,6 +47,7 @@
     margin-left: auto;
   }
   .header-auth {
+    display: block;
     color: var(--text-slate-color);
     font-style: normal;
     font-size: 12px;
@@ -66,22 +67,22 @@
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/tablet-hero.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet-hero-x2.jpg);
+      url(../images/tablet-hero.jpg);
   }
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-hero-x2.jpg);
+    }
+  }
   .hero-title {
     margin-bottom: 36px;
     max-width: 496px;
@@ -100,7 +101,7 @@
     width: calc((100% - 24px) / 2);
   }
   .feature-item-wrap:not(:last-child) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
   .team-wrap {
     display: flex;
@@ -148,5 +149,22 @@
   }
   .modal {
     width: 408px;
+  }
+  .portfolio {
+    padding: 64px 0 96px;
+  }
+  .filter-list-wrap {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-list .item {
+    flex-shrink: 0;
+    flex-basis: calc((100% - 24px) / 2);
   }
 }

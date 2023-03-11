@@ -1,6 +1,7 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
+    padding: 0 15px;
   }
   .header {
     padding: 24px 0;
@@ -11,6 +12,9 @@
   .header-address {
     display: flex;
     gap: 40px;
+  }
+  .header-address > li:not(:last-child) {
+    margin-bottom: 0;
   }
   .header-auth {
     color: var(--text-slate-color);
@@ -59,11 +63,14 @@
     justify-content: center;
     align-items: center;
   }
+  .feature-item-wrap .subtitle {
+    font-size: 20px;
+  }
   .feature-image {
     fill: var(--dark-navy-blue-color);
   }
   .we-doing {
-    display: contents;
+    display: block;
     padding: 120px 0;
   }
   .we-doing-wrap {
@@ -75,11 +82,38 @@
     flex-shrink: 0;
     width: calc((100% - 24px * 2) / 3);
   }
+  .team-wrap {
+    flex-wrap: nowrap;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
   .footer-wrap {
-    padding-left: 16px;
-    gap: 80px;
+    gap: 0;
   }
   .footer-logo-container {
-    margin-right: 40px;
+    margin-right: 120px;
+  }
+  .footer-social-container {
+    margin-right: 80px;
+  }
+  .subscribe-wrap {
+    gap: 23px;
+  }
+  .subscribe-mail {
+    margin-bottom: 0;
+  }
+  .portfolio {
+    padding: 100px 0 120px;
+  }
+  .filter-list-wrap {
+    margin-bottom: 72px;
+  }
+  .portfolio-list {
+    row-gap: 48px;
+  }
+  .portfolio-list .item {
+    flex-basis: calc((100% - 24px * 2) / 3);
   }
 }

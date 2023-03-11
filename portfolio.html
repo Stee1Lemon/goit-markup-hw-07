@@ -19,40 +19,116 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-wrap">
-        <nav class="navigation-wrap">
-          <a class="header-logo link" href="./index.html"
-            ><span class="logo-color">Web</span>Studio</a
-          >
-          <ul class="header-navigation header-navigation-wrap list">
+      <div class="container">
+        <div class="header-wrap">
+          <nav class="navigation-wrap">
+            <a class="header-logo link" href="./index.html"
+              ><span class="logo-color">Web</span>Studio</a
+            >
+            <ul class="header-navigation list">
+              <li>
+                <a class="header-link link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="header-link link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a class="header-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="header-address list">
+              <li>
+                <a class="header-auth link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="header-auth link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <button type="button" class="menu-btn-open" data-menu-open>
+            <svg class="menu-icon-open" width="32" height="22">
+              <use href="./images/symbols.svg#icon-mobile-menu-open"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <button type="button" class="mobile-btn-close" data-menu-close>
+          <svg class="modal-close-btn" width="8" height="8">
+            <use href="./images/symbols.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-wrap">
+          <ul class="mobile-menu-navigation list">
             <li>
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="mobile-menu-link link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a class="header-link link current" href="./portfolio.html"
+              <a class="mobile-menu-link link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li><a class="header-link link" href="">Contacts</a></li>
+            <li><a class="mobile-menu-link link" href="">Contacts</a></li>
           </ul>
-        </nav>
-        <address class="address">
-          <ul class="header-address header-address-wrap list">
-            <li>
-              <a class="header-auth link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="header-auth link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <div>
+            <address class="mobile-address">
+              <ul class="mobile-address-item list">
+                <li>
+                  <a class="mobile-auth-tel link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-auth link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="menu card-social list">
+              <li class="card-social-item">
+                <a href="" class="card-social-link">
+                  <svg class="card-social-icon" width="16" height="16">
+                    <use href="./images/symbols.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="card-social-item">
+                <a href="" class="card-social-link"
+                  ><svg class="card-social-icon" width="16" height="16">
+                    <use href="./images/symbols.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="card-social-item">
+                <a href="" class="card-social-link"
+                  ><svg class="card-social-icon" width="16" height="16">
+                    <use href="./images/symbols.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="card-social-item">
+                <a href="" class="card-social-link"
+                  ><svg class="card-social-icon" width="16" height="16">
+                    <use href="./images/symbols.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -316,6 +392,7 @@
         </div>
         <form class="footer-form" name="subscribe-form">
           <p class="subscribe-text">Subscribe</p>
+
           <div class="subscribe-wrap">
             <input
               type="email"
@@ -334,5 +411,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
